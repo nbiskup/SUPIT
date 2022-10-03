@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pocetna</title>
+    <link rel="stylesheet" href="../css/Pocetna.css">
+    <link rel="stylesheet" href="../css/Header.css">
+    <link rel="stylesheet" href="../css/Kontakt.css">
+    <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css"/>
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">
+          <img src="../VUA_SUPIT_projektni_zadatak_materials/img/Algebra-logo.png" alt="Algebra-logo">           
+        </label>
+        <ul>
+          <li><a href="Pocetna.html"><i class="fas fa-home"></i>Početna</a></li>
+          <li><a href="Onama.html"><i class="fas fa-comments"></i>O nama</a></li>
+          <li><a href="Novosti.html"><i class="fas fa-info-circle"></i>Novosti</a></li>
+          <li><a href="NastavniPlan.html"><i class="fas fa-info-circle"></i>Nastavni plan</a></li>
+          <li><a href="#" id="ContactButton"><i class="fas fa-envelope"></i >Kontkat</a></li>
+        </ul>
+    </nav>
+
+    <video src="../VUA_SUPIT_projektni_zadatak_materials/video/typingOnlaptop.mp4" id="VideoTypping" autoplay muted loop>
+    </video>
+
+    <div id = "typing">
+      <p>Budi izvrstan u onom što voliš.
+        <span class="ZAISKRI">ZAISKRI.</span>
+        <span class="cursor"></span>
+      </p>
+    </div>
+
+<!-- Kontakt -->
+<div class="popup" id="popup">
+  <div class="popup-content">
+      <form name = "Form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method = "post">
+          <p class="KontaktNaslov"><i id="envelope" class="fas fa-envelope"></i>Kontaktirajte nas </p>
+          
+          <br>
+          <label id="podaci">Puno ime:</label><br>
+          <input class="insert" name="Name" type="text" id="txtKontaktIme" required>
+          <br>
+          <label name="email">E-mail:</label><br>
+          <input class="insert" name="email" type="email" id="KontaktMail" required ><br>
+          <label>Važnost poruke:</label><br>
+          <select class="insert" name="importance" id="DropDownMenu">
+              <option value="Visoka">Visoka</option>
+              <option value="Niska">Niska</option>
+          </select>
+          <br>
+
+          <label for="message" name="message">Vaša poruka:</label><br>
+          <textarea name="message" class="message" required></textarea>
+          <label for="Newslatter" name="newsletter">Primaj newslatter</label>
+          <input  type="checkbox" id="Checkbox"><br>
+          <button type="submit" id="btnSend">Pošalji</button>
+          <button type="button"  id="btnClose">Odustani</button>
+      </form>                
+  </div>
+</div>
+
+
+</body>
+
+<script src="../js/Kontakt.js"></script>
+
+</html>

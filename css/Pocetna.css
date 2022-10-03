@@ -1,0 +1,59 @@
+#VideoTypping{
+    position: fixed;
+    z-index: -1;
+}
+
+
+#typing
+{    
+    overflow: hidden;
+    width: 0;
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    margin-left: 20%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    font-size: 3.5rem;
+    color: white;
+    text-shadow: 3px 3px 2px rgb(20, 20, 20);
+    animation: typingAnimation 7s steps(40, end) forwards ;
+}
+
+.cursor
+{
+    height: 45px;
+    width: 25px;
+    background-color: white;
+    display: inline-block;
+    animation: 1s blinking infinite;
+}
+
+.ZAISKRI{
+    color: rgb(73, 6, 12);
+}
+
+@keyframes typingAnimation{    
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blinking {
+    from {opacity: 0;}
+    to {opacity: 1;}    
+}
+
+@media(min-aspect-ratio: 16/9){
+    #VideoTypping{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9){
+    #VideoTypping{
+        width: auto;
+        height: 100%;
+    }
+}
+

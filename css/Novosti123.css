@@ -1,0 +1,247 @@
+.Novost1{
+    background: url("../VUA_SUPIT_projektni_zadatak_materials/img/novost1.jpg");
+}
+
+.Novost2{
+    background: url("../VUA_SUPIT_projektni_zadatak_materials/img/novost2.jpg");
+}
+
+.Novost3{
+    background: url("../VUA_SUPIT_projektni_zadatak_materials/img/novost3.jpg");
+}
+
+.ImgUlet h1{
+    color: white;
+    font-weight: 700;
+    text-align: left;
+    line-height: 1.5em;
+    margin-inline: 25%;
+}
+
+.Novost1, .Novost2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slikeGallery{
+  opacity: 0.7;
+}
+
+.ImgUlet{
+    height: 40vh;
+    margin-bottom: 30px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: 1s ease-in-out ImageUlet;
+}
+
+@keyframes ImageUlet {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }    
+}
+
+@keyframes TekstUlet {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }    
+}
+
+#NovostNaslov{
+    text-align: center;
+    border-bottom: solid darkkhaki;
+    margin-inline: 30%;
+    padding-bottom: 20px;
+    animation: 1s ease-in-out TekstUlet;
+}
+
+p{
+    margin-inline: 20%;
+    text-align: left;
+}
+
+
+
+/* Novost1 */
+
+body {
+    text-align: center;
+}
+
+.gallery {
+    margin: 10px 40px;
+}
+
+video{
+    margin-block: 30px;
+    width: 500px;
+}
+
+.gallery img {
+    width:250px;
+    height: 150px;
+    transition: 1s;
+    padding: 5px;
+    object-fit: cover;
+    object-position: center;
+    background-size: cover;
+    border-radius: 10px;
+
+}
+ 
+.gallery img:hover{
+    filter: drop-shadow(1px 1px 1px rgb(134, 59, 59));
+    transform: scale(1.1);
+}
+
+
+
+
+/* Novost2 */
+
+.row{
+    display: flex;
+    margin-block: 30px;
+    align-items: center;
+}
+
+.row img{
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;    
+}
+
+.video video{
+    align-items: center;
+    height: 200px;
+    object-fit: cover;
+    display: flex;
+}
+
+
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 200px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 100%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: gray;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 25px;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-size: 40px;
+    transition: 0.6s ease;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 1solid blue;    
+  }
+  
+
+  img {
+    margin-bottom: -4px;
+  }
+  
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+ 
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+
+
+

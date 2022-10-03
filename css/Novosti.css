@@ -1,0 +1,111 @@
+main{
+    height: 450px;
+    width: 100%;
+    background-color: whitesmoke;
+}
+
+ #Novosti-h1{
+    margin-top: 50px;
+    border-bottom: 2px solid darkkhaki;
+    margin-left: 20%;
+    margin-right: 20%;    
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: #dec11d;
+    padding-bottom: 30px;
+    margin-bottom: 60px;
+    animation: 1s ease-in-out TekstUlet;
+} 
+
+@keyframes TekstUlet {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }    
+}
+
+.novosti{
+    margin: 0 auto;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.novost{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 15px solid rgb(224, 224, 224);
+    box-shadow: 0px 0 25px rgba(5, 5, 5, 0.333);
+    position: relative;
+    animation: 1s ease-in-out ImageUlet;
+}
+
+.novost-image{
+    height: 100%;
+    width: 100%;
+    display: block;
+    border: none;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.novost-naslov{
+    top: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px black;
+    font-size: 1em;
+}
+
+.novost-opis{
+    font-weight: bold;
+}
+
+.novost-naslov h1{
+    color: yellow;
+    font-size: 1.5em;
+}
+
+@keyframes ImageUlet {
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }    
+}
+
+
+@media(max-width: 1200px){
+    .novosti{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px){
+    .novosti{
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 25px 0;
+        row-gap: 10px;
+    }
+
+    main{
+        height: fit-content;
+    }
+}

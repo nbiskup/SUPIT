@@ -1,0 +1,87 @@
+#envelope{
+    color: aqua;
+    margin-right: 5px;
+}
+
+.popup{
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;    
+    text-align: left;
+}
+ 
+.popup-content{
+    z-index: 1;
+    height: 565px;
+    width: 50%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.KontaktNaslov{
+    border-bottom: solid 1px rgb(233, 233, 233);
+    padding-bottom: 10px;
+    font-size: 30px;
+}
+
+.insert{
+    width: 100%;
+    height: 35px;
+}
+
+.message{
+    width: 100%;
+    height: 120px;    
+}
+
+.insert, .message{
+    font-size: 17px;
+    margin-block: 10px;
+    border-width: 2px;
+    border-radius: 3px;
+    border-color: rgb(212, 212, 212);
+    padding: 10px;
+}
+
+#DropDownMenu{
+    padding: 2px;
+}
+
+#Checkbox{
+    background-color: rgb(7, 7, 7);
+}
+
+#btnSend{
+    background-color: dodgerblue;    
+}
+
+#btnClose{
+    background-color: crimson;
+}
+
+button {
+    cursor: pointer;
+    color: white;
+    padding: 7px;
+    border-radius: 5px;
+    border-style: none;
+    margin-top: 20px;
+    font-size: medium;
+}
+
+@media (max-width: 690px){
+    .KontaktNaslov{       
+        font-size: 20px;
+    }
+
+    .popup-content{
+        font-size: small;
+    }
+}

@@ -1,0 +1,250 @@
+nav .header-links-right ul{
+    float: right;
+    animation: 1s ease-in-out NavUlet;
+}
+.header-links-right ul li{
+     
+    color: chocolate;
+    padding-top: 0;
+    list-style: none;
+}
+
+.header-links-right a:hover{
+    color: rgb(241, 229, 47);
+}
+
+.header-links-right ul li a{
+    color: rgb(245, 173, 66);
+    text-decoration: none;    
+}
+
+#Kampus-iz-zraka{
+    width: 100%;
+    height: 350px;
+    object-fit: cover; 
+    margin-top: 60px;
+    animation: 1s ease-in-out ImageUlet;
+}
+
+body{
+    text-align: center;
+}
+
+#Onama-header{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 2px solid darkkhaki;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 20px;
+    padding-bottom: 20px;
+}
+
+p{
+    padding-bottom: 20px;
+}
+
+.Podnaslov{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    color: mediumvioletred;
+    margin-bottom: 20px;
+    scroll-margin-top: 100px;
+}
+
+.Podnaslov i{
+    margin-right: 5px; 
+    margin-block: 15px;
+    color: mediumvioletred;
+}
+
+#ItalicParagrafi {    
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: left;
+    border-width: 100%;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.7rem;
+}
+
+#Pozadina{
+    background-color: whitesmoke;
+}
+
+.columns9{
+    margin-block: 30px;
+}
+
+.columns3{
+    display: flex;
+    flex-direction: row;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.columnTitle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-bottom: solid 1px tan;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.godine{
+    color: rgb(121, 197, 223);
+    font-size: 1.4em;
+}
+
+.column, .columnFooter{
+    padding: 0px 20px 20px 20px;
+    border: solid 1px rgb(196, 196, 196);
+    flex: 10%;
+    margin: 5px;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+#KontejnerLicenci{
+    padding: 25px 0;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 25px;
+}
+
+.LicenceRed{
+    display: flex;
+    flex-direction: row;    
+    margin-left: 15%;
+}
+
+.licenca{
+    text-align: center;
+    width: 20%;
+    height: 200px;
+    padding: 5px;
+}
+
+.licenca h1{
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.LogoLicenca{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+}
+
+.licenca img{
+    width: 200px;
+}
+
+.licenca .MaliLogo{
+    width: 100px;
+}
+
+.columns2{    
+    display: flex;
+    flex-direction: row;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.columnFooter{
+    background-color: white;
+    padding-top: 20px;
+}
+
+.footerBackground{
+    background-image: url('../VUA_SUPIT_projektni_zadatak_materials/img/kakoDoNas.jpg'); 
+    box-shadow: inset 0 0 0 1000px rgb(255,255, 255, 0.7);
+}
+
+.FooterNaslov{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.FooterNaslov h2 i{
+    color: rgb(16, 161, 252);
+    margin-right: 5px;
+}
+
+.FooterParagraf{
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 26px;
+
+}
+
+.GoogleMaps{
+    margin-inline: 21%;
+    margin-top: 10px;
+}
+
+.GoogleMaps iframe{
+    width: 100%;
+    height: 400px;
+}
+
+#Pozadina{
+    animation: 1s ease-in-out TekstUlet;
+}
+
+@keyframes TekstUlet {
+    0%{
+        transform: translateY(100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }    
+}
+
+@keyframes NavUlet {
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }     
+}
+
+@keyframes ImageUlet {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }    
+}
+
+
+@media (max-width: 1490px){
+
+    .header-links-right ul li a{
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 950px){
+
+    p{
+        font-size: large
+    }
+
+    .column,.FooterParagraf{
+        font-size: x-small;
+    }
+}

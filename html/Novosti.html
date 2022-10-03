@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Novost-1</title>
+  <link rel="stylesheet" href="../css/Footer.css">
+  <link rel="stylesheet" href="../css/Header.css">
+  <link rel="stylesheet" href="../css/Kontakt.css">
+  <link rel="stylesheet" href="../fontawesome-free-5.15.4-web/css/all.css">
+  <link rel="stylesheet" href="../css/Novosti.css">
+</head>
+
+<body>
+  
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">
+      <img src="../VUA_SUPIT_projektni_zadatak_materials/img/Algebra-logo.png" alt="Algebra-logo">           
+    </label>
+    <ul>
+      <li><a href="Pocetna.html"><i class="fas fa-home"></i>Početna</a></li>
+      <li><a href="Onama.html"><i class="fas fa-comments"></i>O nama</a></li>
+      <li><a href="Novosti.html"><i class="fas fa-info-circle"></i>Novosti</a></li>
+      <li><a href="NastavniPlan.html"><i class="fas fa-info-circle"></i>Nastavni plan</a></li>
+      <li><a href="#" id="ContactButton"><i class="fas fa-envelope"></i >Kontkat</a></li>
+    </ul>
+  </nav>
+
+  
+  <br>
+  <br>
+  <br>
+  
+  <div id="Novosti-h1">
+    <h1>Novosti</h1>
+  </div>
+
+  <main>
+    <div class="novosti">
+      <div class="novost">
+        <a href="Novost1.html">
+          <img class="novost-image" src="../VUA_SUPIT_projektni_zadatak_materials/img/novost1.jpg" alt="Novost-1">
+          <div class="novost-naslov">
+            <h1>28.08.2019.</h1>
+            <p class="novost-opis">Student Josip Janešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na
+              natjecanju WorldSkill Kazan 2019.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="novost">
+        <a href="Novost2.html">
+          <img class="novost-image" src="../VUA_SUPIT_projektni_zadatak_materials/img/novost2.jpg" alt="Novost-2">
+          <div class="novost-naslov">
+            <h1>22.07.2019.</h1>
+            <p class="novost-opis">Nagrađujuemo izvrsnost: objavljujemo dobitnike stipedndijskog najtečaja šk.god.
+              2018./2019.!</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="novost">
+        <a href="Novost3.html">
+          <img class="novost-image" src="../VUA_SUPIT_projektni_zadatak_materials/img/novost3.jpg" alt="Novost-3">
+          <div class="novost-naslov">
+            <h1>18.04.2019.</h1>
+            <p class="novost-opis">Digitalno junior ljeto</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Kontakt -->
+  <div class="popup" id="popup">
+      <div class="popup-content">
+        <form name = "Form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method = "post">
+            <p class="KontaktNaslov"><i id="envelope" class="fas fa-envelope"></i>Kontaktirajte nas </p>
+            
+            <br>
+            <label id="podaci">Puno ime:</label><br>
+            <input class="insert" name="Name" type="text" id="txtKontaktIme" required>
+            <br>
+            <label name="email">E-mail:</label><br>
+            <input class="insert" name="email" type="email" id="KontaktMail" required ><br>
+            <label>Važnost poruke:</label><br>
+            <select class="insert" name="importance" id="DropDownMenu">
+                <option value="Visoka">Visoka</option>
+                <option value="Niska">Niska</option>
+            </select>
+            <br>
+
+            <label for="message" name="message">Vaša poruka:</label><br>
+            <textarea name="message" class="message" required></textarea>
+            <label for="Newslatter" name="newsletter">Primaj newslatter</label>
+            <input  type="checkbox" id="Checkbox"><br>
+            <button type="submit" id="btnSend">Pošalji</button>
+            <button type="button"  id="btnClose">Odustani</button>
+        </form>                
+    </div>
+  </div>
+
+</div>
+
+<footer class="MojFooter">
+   <h1 class="slogan">budi izvrstan u onom što voliš <br> <span>zaiskri</span></h1>
+</footer>
+
+</body>
+
+<script src="../js/Kontakt.js"></script>
+
+</html>
